@@ -70,7 +70,7 @@
 
 # Iterables
 # for x in 'Python':
-    # print(x)
+#     print(x)
 
 
 # While loop
@@ -78,19 +78,19 @@
 # while number > 0:
 #     print(number)
 #     number //= 2
-#2.
+# 2.
 # command = ''
 # while command.lower != 'quit':
 #     command = input('>')
 #     print('ECHO ' + command)
-#infinate loop
+# infinate loop
 # while True:
 #     command = input('>')
 #     print('Echo ' + command)
 #     if command.lower() == 'quit':
 #         break
 
-#exercise 
+# exercise 
 # count = 0
 # for x in range(1, 10):
 #     if x % 2 == 0:
@@ -98,4 +98,37 @@
 #         print(x)
 # print(f"We have {count} numbers")
 
+#function
+# def greet(first_name, last_name):
+#     print(f"Hello {first_name} {last_name}")
+#     print('welcome')
 
+
+# greet('Akash', 'Rattan')
+
+#return function
+# def get_greeting(name):
+#     return f"Hi {name}"
+# message = get_greeting('Akash')
+# print(message)
+
+#keyword argument
+# def increment(number, by):
+#     return number + by
+
+# print(increment(number=2, by=1000))
+
+#default argument 
+# def increment(number, by=3):
+#     return number + by
+
+# print(increment(2, 6))
+
+#Xargs
+def multiply(*numbers):
+    total = 1
+    for number in numbers:
+        total *= number
+    print(total)
+
+multiply(2, 3, 4, 5, 6)
